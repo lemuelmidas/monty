@@ -30,7 +30,7 @@ void free_tokens(void)
  */
 unsigned int token_arr_len(void)
 {
-	unsigned int toks_len = 0;
+	unsigned int toks_size = 0;
 
 	while (op_toks[toks_size])
 		toks_size++;
@@ -80,7 +80,7 @@ void (*get_op_func(char *opcode))(stack_t**, unsigned int)
 		{"add", add},
 		{"nop", nop},
 		{"sub", sub},
-		{"div", div},
+		{"div", monty_div},
 		{"mul", mul},
 		{"mod", mod},
 		{"pchar", pchar},

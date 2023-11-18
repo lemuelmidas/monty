@@ -19,7 +19,7 @@ void op_error(int error_code)
 	}
 	while (a < toks_size)
 	{
-		new_toks[a] = op_toks[i];
+		new_toks[a] = op_toks[a];
 		a++;
 	}
 	exit_str = get_int(error_code);
